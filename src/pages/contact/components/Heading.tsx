@@ -6,7 +6,7 @@ const Heading = () => {
       <div className="mb-12">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight max-w-2xl">
           <span className="block mb-2">Contact Us.</span>
-          <span className="block mb-2">Let's Work</span>
+          <span className="block mb-2">{`Let's Work`}</span>
           <span className="flex items-center">
             Together
             <div className="ml-2 inline-flex overflow-hidden">
