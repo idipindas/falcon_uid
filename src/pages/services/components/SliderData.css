@@ -1,0 +1,40 @@
+.custom-carousel .carousel-slider {
+    overflow: visible;
+  }
+  
+  .custom-carousel .slide {
+    transition: all 0.3s ease;
+  }
+  
+  /* Default: 1 card */
+  .custom-carousel .slide {
+    width: 100% !important;
+  }
+  
+  /* SM: 2 cards */
+  @media (min-width: 640px) {
+    .custom-carousel .slide {
+      width: 50% !important;
+    }
+  }
+  
+  /* MD: 3 cards */
+  @media (min-width: 768px) {
+    .custom-carousel .slide {
+      width: 33.33% !important;
+    }
+  }
+  
+  /* LG: 4 cards */
+  @media (min-width: 1024px) {
+    .custom-carousel .slide {
+      width: 25% !important;
+    }
+  }
+  
+  /* XL and above: 5 cards */
+  @media (min-width: 1280px) {
+    .custom-carousel .slide {
+      width: 20% !important;
+    }
+  }

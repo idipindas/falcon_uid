@@ -1,0 +1,16 @@
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+  }
+  
+  .vibrateButton {
+    transition: all 0.3s ease;
+  }
+  
+  .vibrateButton:hover {
+    animation: vibrate 0.3s linear infinite;
+  }

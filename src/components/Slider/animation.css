@@ -1,0 +1,68 @@
+/* Image/Video Fade In Animation */
+.image-fade-in {
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Title Letter Animation */
+.title-animation {
+  display: inline-block;
+  opacity: 0;
+  animation: slideIn 1s ease forwards;
+  animation-delay: 3s; /* Start title animation after the image/video fades in */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); /* Start from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to normal position */
+  }
+}
+
+/* Container for individual letter animation */
+.title-container span {
+  display: inline-block;
+  opacity: 0;
+  animation: letterSlideIn 0.5s ease forwards;
+}
+
+@keyframes letterSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); /* Start from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to normal position */
+  }
+}
+
+/* Logo Fade In and Out Animation */
+.logo-fade-in-out {
+  animation: logoFadeInOut 30s ease-in-out;
+}
+
+@keyframes logoFadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+}

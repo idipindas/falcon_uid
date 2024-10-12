@@ -1,0 +1,27 @@
+@keyframes slideLeftToRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .slide-container {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100px; /* Adjust height as needed */
+  }
+  
+  .slide-text {
+    display: inline-block;
+    padding: 10px; /* Adjust padding if needed */
+    animation: slideLeftToRight 40s linear infinite; /* Increased duration for slower scrolling */
+    font-size: 2rem; /* Adjust font size */
+    color: white; /* Text color */
+    /* Ensure enough space for seamless scrolling */
+    min-width: 200%;
+  }
+  

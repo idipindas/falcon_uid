@@ -1,0 +1,34 @@
+/* Keyframes for flip animation */
+@keyframes flip {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+/* Apply the flip animation */
+.flip-animation {
+  animation: flip 0.8s ease forwards;
+}
+
+/* Keyframes for rotate animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+/* Apply the rotate animation */
+.rotate-animation {
+  animation: rotate 0.8s ease forwards;
+}
+
